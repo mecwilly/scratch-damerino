@@ -1,7 +1,22 @@
+/**************************************************************************************
+ *
+ *              ==== Damerino Robot (ScratchX extension version 1.0) ====
+ *
+ **************************************************************************************
+ * Created by MecWilly Project Srls
+ * www.mecwilly.it/damerino
+ * www.damerinorobot.com
+*/
+
 (function(ext) {
     // Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
 
+    var damerino_ip = '127.0.0.1';
+    var damerino_port = '8888';
+
+    var damerino_server_address = 'http://' + damerino_ip + ':' + damerino_port + '/?';
+    
     // Use this to report missing hardware, plugin or unsupported browser
     ext._getStatus = function() {
         return {status: 2, msg: 'Ready'};
