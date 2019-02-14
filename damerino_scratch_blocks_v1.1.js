@@ -109,7 +109,7 @@
     
     var descriptor = {
         blocks: [
-            ['R', 'DAMERINO say %t language %m.lan_tts', 'say', 'I'm Damerino', 'en'],
+            ['R', 'DAMERINO say %t language %m.lan_tts', 'say', 'I\'m Damerino', 'en'],
             ['R', 'DAMERINO camera %m.on_off', 'camera', 'on'],
             ['R', 'DAMERINO tracking %m.on_off reverse %m.on_off', 'tracking', 'on', 'off'],
             ['R', 'DAMERINO listen language %m.lan_asr', 'listen', 'en']
