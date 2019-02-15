@@ -301,7 +301,7 @@
             [' ', 'classic mood %m.expressions', 'timed_mood', 'happy'],
             [' ', 'rgb eye color red %n green %n blue %n', 'rgb_eye_color', '255', '0', '0'],
             [' ', 'TEAM set variable name %s value %s', 'set_var', '', ''],
-            [' ', 'TEAM set subject %s', 'set_subject', '']
+            [' ', 'TEAM ['--'] set subject %s', 'set_subject', '']
         ],
         menus: {
         on_off: ['on','off'],
