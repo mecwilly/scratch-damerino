@@ -74,8 +74,8 @@
 
        ext.face_size = function(size, callback) {
               var ist;
-              if(size=='x') ist = 'xface';
-              else ist = 'yface';
+              if(size=='width') ist = 'widthface';
+              else ist = 'heightface';
         $.ajax({
               url: damerino_server_address + ist,
               type: 'GET',
