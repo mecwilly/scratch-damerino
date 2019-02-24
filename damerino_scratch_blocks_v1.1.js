@@ -276,10 +276,10 @@
         });
     };
 
-    //%s string %n numeroPITCH#RATE#ASYNC#LABIAL
+    //%s string %n numero
     var descriptor = {
         blocks: [
-            ['R', 'say %s language %m.lan_tts pitch %n rate %n', 'say', 'I\'m Damerino', 'en', '1.0', '1.0'],
+            ['W', 'say %s language %m.lan_tts pitch %n rate %n', 'say', 'I\'m Damerino', 'en', '1.0', '1.0'],
             [' ', 'camera %m.on_off', 'camera', 'on'],
             [' ', 'tracking %m.on_off reverse %m.on_off', 'tracking', 'on', 'off'],
             ['R', 'listen language %m.lan_asr', 'listen', 'en'],
