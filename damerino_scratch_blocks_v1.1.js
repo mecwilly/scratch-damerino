@@ -230,9 +230,9 @@
         $.ajax({
               url: damerino_server_address + 'say%23'+text+'%23'+language+'%23'+pitch+'%23'+rate+'%23no%23yes',
               type: 'GET',
-     //         success: function(data) {
-     //             callback(data);
-     //         }
+              success: function() {
+                  callback(data);
+              }
         });
     };
     
