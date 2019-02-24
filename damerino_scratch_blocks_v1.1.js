@@ -231,7 +231,7 @@
               url: damerino_server_address + 'say%23'+text+'%23'+language+'%23'+pitch+'%23'+rate+'%23no%23yes',
               type: 'GET',
               success: function() {
-                  callback(data);
+                  callback();
               }
         });
     };
@@ -279,7 +279,7 @@
     //%s string %n numero
     var descriptor = {
         blocks: [
-            ['W', 'say %s language %m.lan_tts pitch %n rate %n', 'say', 'I\'m Damerino', 'en', '1.0', '1.0'],
+            ['w', 'say %s language %m.lan_tts pitch %n rate %n', 'say', 'I\'m Damerino', 'en', '1.0', '1.0'],
             [' ', 'camera %m.on_off', 'camera', 'on'],
             [' ', 'tracking %m.on_off reverse %m.on_off', 'tracking', 'on', 'off'],
             ['R', 'listen language %m.lan_asr', 'listen', 'en'],
