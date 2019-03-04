@@ -42,10 +42,6 @@
         });
     };
 
-
-
-
-
        ext.eye = function(rl, callback) {
               var ist;
               if(rl=='r') ist = 'righteye';
@@ -59,8 +55,6 @@
         });
     };
 
-
-
        ext.eyes = function(callback) {
         $.ajax({
               url: damerino_server_address + 'eyes',
@@ -70,9 +64,7 @@
               }
         });
     };
-
     
-
        ext.face_size = function(size, callback) {
               var ist;
               if(size=='width') ist = 'widthface';
@@ -109,7 +101,6 @@
         });
     };
 
-
        ext.smile = function(callback) {
         $.ajax({
               url: damerino_server_address + 'smile',
@@ -120,15 +111,10 @@
         });
     };
 
-
-
        ext.camera = function(set, callback) {
         $.ajax({
               url: damerino_server_address + 'camera%23'+set,
               type: 'GET',
-//              success: function() {
-//                  callback(data);
-  //            }
         });
     };
 
@@ -136,9 +122,6 @@
         $.ajax({
               url: damerino_server_address + 'standby',
               type: 'GET',
-  //            success: function() {
-//                  callback(data);
-//              }
         });
     };
 
@@ -146,12 +129,8 @@
         $.ajax({
               url: damerino_server_address + 'servos_off',
               type: 'GET',
-//              success: function() {
-//                  callback(data);
-  //            }
         });
     };
-
 
        ext.speaking = function(set, callback) {
               var ist;
@@ -160,9 +139,6 @@
         $.ajax({
               url: damerino_server_address + ist,
               type: 'GET',
-//              success: function() {
-//                  callback(data);
-  //            }
         });
     };
 
@@ -170,20 +146,13 @@
         $.ajax({
               url: damerino_server_address + 'sync_randeyes',
               type: 'GET',
-//              success: function() {
-//                  callback(data);
-  //            }
         });
     };
-
 
        ext.takepicture = function(callback) {
         $.ajax({
               url: damerino_server_address + 'takepicture',
               type: 'GET',
-//              success: function() {
-//                  callback(data);
-  //            }
         });
     };
 
@@ -192,7 +161,6 @@
               url: damerino_server_address + 'mood%23' + expression,
               type: 'GET',
               success: function() {
-//                  callback(data);
               }
         });
     };
@@ -202,7 +170,6 @@
               url: damerino_server_address + 'tracking%23'+status+'%23'+reverse_status,
               type: 'GET',
               success: function() {
-//                  callback(data);
               }
         });
     };
@@ -221,9 +188,6 @@
         $.ajax({
               url: damerino_server_address + 'rgb_eye_color%23'+r+'%23'+g+'%23'+b,
               type: 'GET',
-//              success: function(data) {
- //                 callback(data);
-  //            }
         });
     };
 
@@ -241,9 +205,6 @@
         $.ajax({
               url: damerino_server_address + 'set_var'+'%23'+name+'%23'+value,
               type: 'GET',
-//              success: function(data) {
-  //                callback(data);
-    //          }
         });
     };
 
@@ -271,9 +232,6 @@
         $.ajax({
               url: damerino_server_address + 'set_subject' + '%23' + subject,
               type: 'GET',
-//              success: function(data) {
- //                 callback(data);
-  //            }
         });
     };
     
