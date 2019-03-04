@@ -71,6 +71,7 @@
         });
     };
 
+    
 
        ext.face_size = function(size, callback) {
               var ist;
@@ -275,6 +276,16 @@
   //            }
         });
     };
+    
+     ext.qrcode = function(callback) {
+        $.ajax({
+              url: damerino_server_address + 'qrcode',
+              type: 'GET',
+              success: function(data) {
+                  callback(data);
+              }
+        });
+    };
 
     //%s string %n numero
     var descriptor = {
@@ -293,6 +304,7 @@
             ['R', 'eyes close check %m.rl', 'eye', 'right'],
             ['R', 'TEAM check subject', 'check_subject'],
             ['R', 'TEAM get variable %s', 'get_var', ''],
+            ['R', 'QR code', 'qrcode'],
             [' ', 'standby', 'standby'],
             [' ', 'speaking %m.on_off', 'speaking', 'on'],
             [' ', 'servos off', 'servos_off'],
