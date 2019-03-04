@@ -279,7 +279,7 @@
     
      ext.qrcode = function(callback) {
         $.ajax({
-              url: damerino_server_address + 'qrcode',
+              url: damerino_server_address + 'get_qrcode',
               type: 'GET',
               success: function(data) {
                   callback(data);
