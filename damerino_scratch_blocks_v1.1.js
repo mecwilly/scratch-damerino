@@ -1,11 +1,11 @@
 /**************************************************************************************
  *
- *              ==== Damerino Robot (ScratchX extension version 1.0) ====
+ *              ==== Damerino Robot (ScratchX extension version 1.1) ====
  *
  **************************************************************************************
  * Created by MecWilly Project
- * www.mecwilly.it/damerino
  * www.damerinorobot.com
+ * www.mecwilly.it
 */
 
 (function(ext) {
